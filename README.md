@@ -81,9 +81,9 @@ Here's a breakdown of its components:
     - Training Set: Used to train the machine learning model. It learns from this data.
     - Test Set: Used to evaluate the performance of the model. It's important that this data is not used in the training phase to ensure that the evaluation of the model's performance is fair and unbiased.
 ### Why Separate X and Y, Train and Test Sets?
-***X_train and X_test:*** These are the subsets of your features (X). X_train contains a portion of your data used for training the model. X_test is used to test the model after training. It's crucial that the model has never seen X_test during training to accurately assess its performance.
-***y_train and y_test:*** These are the corresponding subsets of labels (Y) for X_train and X_test. y_train contains the labels for the training data, and y_test contains the labels for the test data.
-By having these separate datasets, you can train your model on one set of data (X_train, y_train) and then test its effectiveness on a different set (X_test, y_test). This approach gives a more accurate measure of how well your model generalizes to new, unseen data, which is a critical aspect of machine learning.
+***`X_train` and `X_test`:*** These are the subsets of your features (X). `X_train` contains a portion of your data used for training the model. `X_test` is used to test the model after training. It's crucial that the model has never seen `X_test` during training to accurately assess its performance.
+***`y_train` and `y_test`:*** These are the corresponding subsets of labels (Y) for `X_train` and `X_test`. `y_train` contains the labels for the training data, and `y_test` contains the labels for the test data.
+By having these separate datasets, you can train your model on one set of data (`X_train`, `y_train`) and then test its effectiveness on a different set (`X_test`, `y_test`). This approach gives a more accurate measure of how well your model generalizes to new, unseen data, which is a critical aspect of machine learning.
 
 ### What is `random_state`?
 **Randomness in Splitting:** When we split a dataset into training and testing sets, we often want to do this randomly. This randomness ensures that the split is unbiased and that both sets are representative of the whole dataset. However, this random process can lead to different splits each time you run your code, which can make your results inconsistent and hard to reproduce.
@@ -138,8 +138,8 @@ Once you've trained your kNN model, you can use it to make predictions on new da
 Here's how it works:
 1. ***Input to `predict`:*** The input to the predict function is the set of new data points for which you want to predict the output. In our case, this is X_test, which is the subset of your original dataset that you've set aside for testing.
 2. ***How `predict` Works:***
-    * The kNN algorithm looks at each data point in X_test.
-    * For each data point, it finds the 'k' nearest neighbors in the training data (X_train).
+    * The kNN algorithm looks at each data point in `X_test`.
+    * For each data point, it finds the 'k' nearest neighbors in the training data (`X_train`).
     * It then looks at the labels of these 'k' nearest neighbors.
     * The most common label among these neighbors is assigned as the predicted label for the data point.
 3. ***Output of predict:*** The output is a series of predicted labels, one for each data point in your test set. These labels are in the same order as the data points in X_test.
