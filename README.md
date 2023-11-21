@@ -19,6 +19,10 @@ You can install them using pip:
 ```bash
 pip install numpy pandas scikit-learn
 ```
+Note: You may need to use `pip3` as follow:
+```bash
+pip3 install numpy pandas scikit-learn
+```
 
 ## Methodology
 1. **Data Loading:** The Iris dataset is loaded using scikit-learn.
