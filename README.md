@@ -1,4 +1,4 @@
-# Iris Species Classifier using k-Nearest Neighbors
+# Intro to Machine Learning: Iris Species Classifier using k-Nearest Neighbors
 
 ## Introduction
 This project is an introduction into Machnie Learning by implementation of a machine learning model to classify iris species. Utilizing the Iris dataset, it provides a beginner-friendly introduction to the workflow of a machine learning project in Python, with an emphasis on using the scikit-learn library.
